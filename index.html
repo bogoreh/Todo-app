@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Frontend Mentor Todo app</title>
+	<link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-area">
+			<h1 class="header-area__heading">todo</h1>
+			<button class="header-area__btn" role="button" aria-label="change theme">
+				<img src="./images/icon-moon.svg" class="header-area__btn--icon" alt="moon icon">
+				<img src="./images/icon-sun.svg" class="header-area__btn--icon" alt="sun icon">
+			</button>
+		</div>
+	</header>
+	<main>
+		<section>
+			<div class="to-do-app">
+				<div class="input-container">
+					<span class="input-container__circle"></span>
+					<input type="text" class="input-container__input" id="create_task"
+						placeholder="Create a new todo...">
+					<label for="create_task" class="input-container__label">Create a new todo</label>
+				</div>
+
+				<div class="task-container">
+					<ul class="tasks-box">
+						<div class="empty-state">
+							<h2 class="empty-state__heading">Please create a new task</h2>
+							<div class="empty-state__option">
+								<span class="empty-state__option--circle"></span>
+								<p class="empty-state__option--text">Select text to mark task as completed</p>
+							</div>
+							<div class="empty-state__option">
+								<img src="./images/icon-cross.svg" alt="Delete task icon"
+									class="empty-state__option--x-img">
+								<p class="empty-state__option--text">Select cross sign to delete task</p>
+							</div>
+						</div>
+					</ul>
+					<div class="button-container">
+						<p class="button-container__text"></p>
+							<button class="button-container__clear-btn">Clear
+								completed</button>
+					</div>
+				</div>
+
+				<div class="button-container">
+					<button class="button-container__btn" data-status="all">All</button>
+					<button class="button-container__btn" data-status="active">Active</button>
+					<button class="button-container__btn" data-status="completed">Completed</button>
+				</div>
+
+				<p class="to-do-app__text">Drag and drop to reorder list</p>
+			</div>
+
+			<div class="error">
+				<p class="error__text"></p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p class="footer__author">Challenge by <a href="https://www.frontendmentor.io" target="_blank"
+				rel="noopener">Frontend Mentor</a>.
+			Coded by <a href="https://github.com/Pawel-Gnat" target="_blank" rel="noopener">Abdibogoreh</a>.</p>
+	</footer>
+	<script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

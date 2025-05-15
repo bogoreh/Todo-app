@@ -1,0 +1,49 @@
+@keyframes displayError {
+	from {
+		top: -5rem;
+	}
+
+	to {
+		top: 5rem;
+	}
+}
+
+@keyframes hideError {
+	from {
+		top: 5rem;
+	}
+
+	to {
+		top: -5rem;
+	}
+}
+
+@keyframes displayTask {
+	from {
+		top: -20rem;
+	}
+
+	to {
+		top: 0;
+	}
+}
+
+@keyframes removeTask {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 80rem;
+	}
+}
+
+@keyframes displayImg {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

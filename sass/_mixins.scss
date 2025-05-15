@@ -1,0 +1,18 @@
+@mixin btn-circle {
+	min-height: 2rem;
+	min-width: 2rem;
+	border-radius: 50%;
+	border: 1px solid var(--border-color);
+	background-color: transparent;
+	transition: border-color 0.3s;
+}
+
+@mixin btn {
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 1rem;
+	border: none;
+	background-color: transparent;
+	color: var(--btn-color);
+	transition: color 0.3s;
+	cursor: pointer;
+}
